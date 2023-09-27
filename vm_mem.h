@@ -1,3 +1,7 @@
+#ifndef _VM_MEM_H
+#define _VM_MEM_H
+
+
 #include "instruction.h"
 #include "machine_types.h"
 
@@ -12,3 +16,6 @@ static union mem_u {
   bin_instr_t instrs[MEMORY_SIZE_IN_WORDS];
 
 } memory;
+
+
+#endif
