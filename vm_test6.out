@@ -1,0 +1,150 @@
+      PC: 0
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 0   	GPR[$t1]: 0   	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:    0 ADDI $0, $t0, 1
+      PC: 4
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 1   	GPR[$t1]: 0   	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:    4 SLL $t0, $t1, 20
+      PC: 8
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 1   	GPR[$t1]: 1048576	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:    8 ADD $t0, $t1, $t2
+      PC: 12
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 1   	GPR[$t1]: 1048576	GPR[$t2]: 1048577	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   12 ADD $t0, $t0, $t3
+      PC: 16
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 1   	GPR[$t1]: 1048576	GPR[$t2]: 1048577	GPR[$t3]: 2   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   16 DIV $t2, $t3
+      PC: 20	      HI: 1	      LO: 524288
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 1   	GPR[$t1]: 1048576	GPR[$t2]: 1048577	GPR[$t3]: 2   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   20 MFLO $t4
+      PC: 24	      HI: 1	      LO: 524288
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 1   	GPR[$t1]: 1048576	GPR[$t2]: 1048577	GPR[$t3]: 2   
+GPR[$t4]: 524288	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   24 MFHI $t5
+      PC: 28	      HI: 1	      LO: 524288
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 1   	GPR[$t1]: 1048576	GPR[$t2]: 1048577	GPR[$t3]: 2   
+GPR[$t4]: 524288	GPR[$t5]: 1   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   28 SW $gp, $t5, 0	# offset is +0 bytes
+      PC: 32	      HI: 1	      LO: 524288
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 1   	GPR[$t1]: 1048576	GPR[$t2]: 1048577	GPR[$t3]: 2   
+GPR[$t4]: 524288	GPR[$t5]: 1   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 1	    1028: 0	...
+    4096: 0	...
+==> addr:   32 SW $gp, $t4, 1	# offset is +4 bytes
+      PC: 36	      HI: 1	      LO: 524288
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 1   	GPR[$t1]: 1048576	GPR[$t2]: 1048577	GPR[$t3]: 2   
+GPR[$t4]: 524288	GPR[$t5]: 1   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 1	    1028: 524288	    1032: 0	...
+    4096: 0	...
+==> addr:   36 SLL $t0, $t6, 10
+      PC: 40	      HI: 1	      LO: 524288
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 1   	GPR[$t1]: 1048576	GPR[$t2]: 1048577	GPR[$t3]: 2   
+GPR[$t4]: 524288	GPR[$t5]: 1   	GPR[$t6]: 1024	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 1	    1028: 524288	    1032: 0	...
+    4096: 0	...
+==> addr:   40 MUL $t6, $t2
+      PC: 44	      HI: 0	      LO: 1073742848
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 1   	GPR[$t1]: 1048576	GPR[$t2]: 1048577	GPR[$t3]: 2   
+GPR[$t4]: 524288	GPR[$t5]: 1   	GPR[$t6]: 1024	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 1	    1028: 524288	    1032: 0	...
+    4096: 0	...
+==> addr:   44 MFHI $t7
+      PC: 48	      HI: 0	      LO: 1073742848
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 1   	GPR[$t1]: 1048576	GPR[$t2]: 1048577	GPR[$t3]: 2   
+GPR[$t4]: 524288	GPR[$t5]: 1   	GPR[$t6]: 1024	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 1	    1028: 524288	    1032: 0	...
+    4096: 0	...
+==> addr:   48 ADDI $sp, $sp, -4
+      PC: 52	      HI: 0	      LO: 1073742848
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 1   	GPR[$t1]: 1048576	GPR[$t2]: 1048577	GPR[$t3]: 2   
+GPR[$t4]: 524288	GPR[$t5]: 1   	GPR[$t6]: 1024	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4092
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 1	    1028: 524288	    1032: 0	...
+    4092: 0	...
+==> addr:   52 SW $sp, $t7, 0	# offset is +0 bytes
+      PC: 56	      HI: 0	      LO: 1073742848
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 1   	GPR[$t1]: 1048576	GPR[$t2]: 1048577	GPR[$t3]: 2   
+GPR[$t4]: 524288	GPR[$t5]: 1   	GPR[$t6]: 1024	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4092
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 1	    1028: 524288	    1032: 0	...
+    4092: 0	...
+==> addr:   56 EXIT 

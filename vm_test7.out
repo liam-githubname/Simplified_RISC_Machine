@@ -1,0 +1,1228 @@
+      PC: 0
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 0   	GPR[$t1]: 0   	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:    0 ADDI $0, $at, 1
+      PC: 4
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 0   	GPR[$t1]: 0   	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:    4 ADDI $0, $v0, 2
+      PC: 8
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 0   	GPR[$t1]: 0   	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:    8 ADDI $0, $v1, 3
+      PC: 12
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 0   	GPR[$t1]: 0   	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   12 ADDI $0, $a0, 4
+      PC: 16
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 0   	GPR[$t1]: 0   	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   16 ADDI $0, $a1, 5
+      PC: 20
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 0   	GPR[$t1]: 0   	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   20 ADDI $0, $a2, 6
+      PC: 24
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 0   	GPR[$t0]: 0   	GPR[$t1]: 0   	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   24 ADDI $0, $a3, 7
+      PC: 28
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 0   	GPR[$t1]: 0   	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   28 ADDI $0, $t0, 8
+      PC: 32
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 0   	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   32 ADDI $0, $t1, 9
+      PC: 36
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   36 ADDI $0, $t2, 10
+      PC: 40
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   40 ADDI $0, $t3, 11
+      PC: 44
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   44 ADDI $0, $t4, 12
+      PC: 48
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   48 ADDI $0, $t5, 13
+      PC: 52
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   52 ADDI $0, $t6, 14
+      PC: 56
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   56 ADDI $0, $t7, 15
+      PC: 60
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   60 ADDI $0, $s0, 16
+      PC: 64
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   64 ADDI $0, $s1, 17
+      PC: 68
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   68 ADDI $0, $s2, 18
+      PC: 72
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   72 ADDI $0, $s3, 19
+      PC: 76
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   76 ADDI $0, $s4, 20
+      PC: 80
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   80 ADDI $0, $s5, 21
+      PC: 84
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   84 ADDI $0, $s6, 22
+      PC: 88
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   88 ADDI $0, $s7, 23
+      PC: 92
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   92 ADDI $0, $t8, 24
+      PC: 96
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:   96 ADDI $0, $t9, 25
+      PC: 100
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:  100 JAL 71	# target is byte address 284
+      PC: 284
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4096: 0	...
+==> addr:  284 ADDI $sp, $sp, -4
+      PC: 288
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4092
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4092: 0	...
+==> addr:  288 SW $sp, $s0, 0	# offset is +0 bytes
+      PC: 292
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4092
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4092: 16	    4096: 0	...
+==> addr:  292 ADDI $sp, $sp, -4
+      PC: 296
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4088
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4088: 0	...    4092: 16	    4096: 0	...
+==> addr:  296 SW $sp, $s1, 0	# offset is +0 bytes
+      PC: 300
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4088
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  300 ADDI $sp, $sp, -4
+      PC: 304
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4084
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4084: 0	...    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  304 SW $sp, $s2, 0	# offset is +0 bytes
+      PC: 308
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4084
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  308 ADDI $sp, $sp, -4
+      PC: 312
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4080
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4080: 0	...    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  312 SW $sp, $s3, 0	# offset is +0 bytes
+      PC: 316
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4080
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4080: 19	    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  316 ADDI $sp, $sp, -4
+      PC: 320
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4076
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4076: 0	...    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  320 SW $sp, $s4, 0	# offset is +0 bytes
+      PC: 324
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4076
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  324 ADDI $sp, $sp, -4
+      PC: 328
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4072
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4072: 0	...    4076: 20	    4080: 19	    4084: 18	    4088: 17	
+    4092: 16	    4096: 0	...
+==> addr:  328 SW $sp, $s5, 0	# offset is +0 bytes
+      PC: 332
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4072
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4072: 21	    4076: 20	    4080: 19	    4084: 18	    4088: 17	
+    4092: 16	    4096: 0	...
+==> addr:  332 ADDI $sp, $sp, -4
+      PC: 336
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4068
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4068: 0	...    4072: 21	    4076: 20	    4080: 19	    4084: 18	
+    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  336 SW $sp, $s6, 0	# offset is +0 bytes
+      PC: 340
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4068
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4068: 22	    4072: 21	    4076: 20	    4080: 19	    4084: 18	
+    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  340 ADDI $sp, $sp, -4
+      PC: 344
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4064
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4064: 0	...    4068: 22	    4072: 21	    4076: 20	    4080: 19	
+    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  344 SW $sp, $s7, 0	# offset is +0 bytes
+      PC: 348
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4064
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4064: 23	    4068: 22	    4072: 21	    4076: 20	    4080: 19	
+    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  348 JR $ra
+      PC: 104
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4064
+GPR[$fp]: 4096	GPR[$ra]: 104 
+    1024: 0	...
+    4064: 23	    4068: 22	    4072: 21	    4076: 20	    4080: 19	
+    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  104 JAL 30	# target is byte address 120
+      PC: 120
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4064
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    4064: 23	    4068: 22	    4072: 21	    4076: 20	    4080: 19	
+    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  120 ADDI $sp, $sp, -4
+      PC: 124
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4060
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    4060: 0	...    4064: 23	    4068: 22	    4072: 21	    4076: 20	
+    4080: 19	    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  124 SW $sp, $at, 0	# offset is +0 bytes
+      PC: 128
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4060
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    4060: 1	    4064: 23	    4068: 22	    4072: 21	    4076: 20	
+    4080: 19	    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  128 ADD $0, $sp, $at
+      PC: 132
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4060
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    4060: 1	    4064: 23	    4068: 22	    4072: 21	    4076: 20	
+    4080: 19	    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  132 ADDI $sp, $sp, -64
+      PC: 136
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  136 SW $at, $v0, -1	# offset is -4 bytes
+      PC: 140
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4056: 2	    4060: 1	    4064: 23	    4068: 22	
+    4072: 21	    4076: 20	    4080: 19	    4084: 18	    4088: 17	
+    4092: 16	    4096: 0	...
+==> addr:  140 SW $at, $v1, -2	# offset is -8 bytes
+      PC: 144
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4052: 3	    4056: 2	    4060: 1	    4064: 23	
+    4068: 22	    4072: 21	    4076: 20	    4080: 19	    4084: 18	
+    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  144 SW $at, $a0, -3	# offset is -12 bytes
+      PC: 148
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4048: 4	    4052: 3	    4056: 2	    4060: 1	
+    4064: 23	    4068: 22	    4072: 21	    4076: 20	    4080: 19	
+    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  148 SW $at, $a1, -4	# offset is -16 bytes
+      PC: 152
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4044: 5	    4048: 4	    4052: 3	    4056: 2	
+    4060: 1	    4064: 23	    4068: 22	    4072: 21	    4076: 20	
+    4080: 19	    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  152 SW $at, $a2, -5	# offset is -20 bytes
+      PC: 156
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  156 SW $at, $a3, -6	# offset is -24 bytes
+      PC: 160
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4036: 7	    4040: 6	    4044: 5	    4048: 4	
+    4052: 3	    4056: 2	    4060: 1	    4064: 23	    4068: 22	
+    4072: 21	    4076: 20	    4080: 19	    4084: 18	    4088: 17	
+    4092: 16	    4096: 0	...
+==> addr:  160 SW $at, $t0, -7	# offset is -28 bytes
+      PC: 164
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4032: 8	    4036: 7	    4040: 6	    4044: 5	
+    4048: 4	    4052: 3	    4056: 2	    4060: 1	    4064: 23	
+    4068: 22	    4072: 21	    4076: 20	    4080: 19	    4084: 18	
+    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  164 SW $at, $t1, -8	# offset is -32 bytes
+      PC: 168
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4028: 9	    4032: 8	    4036: 7	    4040: 6	
+    4044: 5	    4048: 4	    4052: 3	    4056: 2	    4060: 1	
+    4064: 23	    4068: 22	    4072: 21	    4076: 20	    4080: 19	
+    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  168 SW $at, $t2, -9	# offset is -36 bytes
+      PC: 172
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4024: 10	    4028: 9	    4032: 8	    4036: 7	
+    4040: 6	    4044: 5	    4048: 4	    4052: 3	    4056: 2	
+    4060: 1	    4064: 23	    4068: 22	    4072: 21	    4076: 20	
+    4080: 19	    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  172 SW $at, $t3, -10	# offset is -40 bytes
+      PC: 176
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  176 SW $at, $t4, -11	# offset is -44 bytes
+      PC: 180
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4016: 12	    4020: 11	    4024: 10	    4028: 9	
+    4032: 8	    4036: 7	    4040: 6	    4044: 5	    4048: 4	
+    4052: 3	    4056: 2	    4060: 1	    4064: 23	    4068: 22	
+    4072: 21	    4076: 20	    4080: 19	    4084: 18	    4088: 17	
+    4092: 16	    4096: 0	...
+==> addr:  180 SW $at, $t5, -12	# offset is -48 bytes
+      PC: 184
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4012: 13	    4016: 12	    4020: 11	    4024: 10	
+    4028: 9	    4032: 8	    4036: 7	    4040: 6	    4044: 5	
+    4048: 4	    4052: 3	    4056: 2	    4060: 1	    4064: 23	
+    4068: 22	    4072: 21	    4076: 20	    4080: 19	    4084: 18	
+    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  184 SW $at, $t6, -13	# offset is -52 bytes
+      PC: 188
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4008: 14	    4012: 13	    4016: 12	    4020: 11	
+    4024: 10	    4028: 9	    4032: 8	    4036: 7	    4040: 6	
+    4044: 5	    4048: 4	    4052: 3	    4056: 2	    4060: 1	
+    4064: 23	    4068: 22	    4072: 21	    4076: 20	    4080: 19	
+    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  188 SW $at, $t7, -14	# offset is -56 bytes
+      PC: 192
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4004: 15	    4008: 14	    4012: 13	    4016: 12	
+    4020: 11	    4024: 10	    4028: 9	    4032: 8	    4036: 7	
+    4040: 6	    4044: 5	    4048: 4	    4052: 3	    4056: 2	
+    4060: 1	    4064: 23	    4068: 22	    4072: 21	    4076: 20	
+    4080: 19	    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  192 SW $at, $t8, -15	# offset is -60 bytes
+      PC: 196
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 0	...    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  196 SW $at, $t9, -16	# offset is -64 bytes
+      PC: 200
+GPR[$0 ]: 0   	GPR[$at]: 4060	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  200 LW $at, $at, 0	# offset is +0 bytes
+      PC: 204
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  204 JR $ra
+      PC: 108
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 108 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  108 JAL 52	# target is byte address 208
+      PC: 208
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  208 LW $sp, $t9, 0	# offset is +0 bytes
+      PC: 212
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  212 LW $sp, $t8, 1	# offset is +4 bytes
+      PC: 216
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  216 LW $sp, $t7, 2	# offset is +8 bytes
+      PC: 220
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  220 LW $sp, $t6, 3	# offset is +12 bytes
+      PC: 224
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  224 LW $sp, $t5, 4	# offset is +16 bytes
+      PC: 228
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  228 LW $sp, $t4, 5	# offset is +20 bytes
+      PC: 232
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  232 LW $sp, $t3, 6	# offset is +24 bytes
+      PC: 236
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  236 LW $sp, $t2, 7	# offset is +28 bytes
+      PC: 240
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  240 LW $sp, $t1, 8	# offset is +32 bytes
+      PC: 244
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  244 LW $sp, $t0, 9	# offset is +36 bytes
+      PC: 248
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  248 LW $sp, $a3, 10	# offset is +40 bytes
+      PC: 252
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  252 LW $sp, $a2, 11	# offset is +44 bytes
+      PC: 256
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  256 LW $sp, $a1, 12	# offset is +48 bytes
+      PC: 260
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  260 LW $sp, $a0, 13	# offset is +52 bytes
+      PC: 264
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  264 LW $sp, $v1, 14	# offset is +56 bytes
+      PC: 268
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  268 LW $sp, $v0, 15	# offset is +60 bytes
+      PC: 272
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  272 LW $sp, $at, 16	# offset is +64 bytes
+      PC: 276
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 3996
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    3996: 25	    4000: 24	    4004: 15	    4008: 14	    4012: 13	
+    4016: 12	    4020: 11	    4024: 10	    4028: 9	    4032: 8	
+    4036: 7	    4040: 6	    4044: 5	    4048: 4	    4052: 3	
+    4056: 2	    4060: 1	    4064: 23	    4068: 22	    4072: 21	
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  276 ADDI $sp, $sp, 68
+      PC: 280
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4064
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    4064: 23	    4068: 22	    4072: 21	    4076: 20	    4080: 19	
+    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  280 JR $ra
+      PC: 112
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4064
+GPR[$fp]: 4096	GPR[$ra]: 112 
+    1024: 0	...
+    4064: 23	    4068: 22	    4072: 21	    4076: 20	    4080: 19	
+    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  112 JAL 88	# target is byte address 352
+      PC: 352
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4064
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4064: 23	    4068: 22	    4072: 21	    4076: 20	    4080: 19	
+    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  352 LW $sp, $s7, 0	# offset is +0 bytes
+      PC: 356
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4064
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4064: 23	    4068: 22	    4072: 21	    4076: 20	    4080: 19	
+    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  356 ADDI $sp, $sp, 4
+      PC: 360
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4068
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4068: 22	    4072: 21	    4076: 20	    4080: 19	    4084: 18	
+    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  360 LW $sp, $s6, 0	# offset is +0 bytes
+      PC: 364
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4068
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4068: 22	    4072: 21	    4076: 20	    4080: 19	    4084: 18	
+    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  364 ADDI $sp, $sp, 4
+      PC: 368
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4072
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4072: 21	    4076: 20	    4080: 19	    4084: 18	    4088: 17	
+    4092: 16	    4096: 0	...
+==> addr:  368 LW $sp, $s5, 0	# offset is +0 bytes
+      PC: 372
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4072
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4072: 21	    4076: 20	    4080: 19	    4084: 18	    4088: 17	
+    4092: 16	    4096: 0	...
+==> addr:  372 ADDI $sp, $sp, 4
+      PC: 376
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4076
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  376 LW $sp, $s4, 0	# offset is +0 bytes
+      PC: 380
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4076
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4076: 20	    4080: 19	    4084: 18	    4088: 17	    4092: 16	
+    4096: 0	...
+==> addr:  380 ADDI $sp, $sp, 4
+      PC: 384
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4080
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4080: 19	    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  384 LW $sp, $s3, 0	# offset is +0 bytes
+      PC: 388
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4080
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4080: 19	    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  388 ADDI $sp, $sp, 4
+      PC: 392
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4084
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  392 LW $sp, $s2, 0	# offset is +0 bytes
+      PC: 396
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4084
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4084: 18	    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  396 ADDI $sp, $sp, 4
+      PC: 400
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4088
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  400 LW $sp, $s1, 0	# offset is +0 bytes
+      PC: 404
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4088
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4088: 17	    4092: 16	    4096: 0	...
+==> addr:  404 ADDI $sp, $sp, 4
+      PC: 408
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4092
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4092: 16	    4096: 0	...
+==> addr:  408 LW $sp, $s0, 0	# offset is +0 bytes
+      PC: 412
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4092
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4092: 16	    4096: 0	...
+==> addr:  412 ADDI $sp, $sp, 4
+      PC: 416
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4096: 0	...
+==> addr:  416 JR $ra
+      PC: 116
+GPR[$0 ]: 0   	GPR[$at]: 1   	GPR[$v0]: 2   	GPR[$v1]: 3   	GPR[$a0]: 4   	GPR[$a1]: 5   
+GPR[$a2]: 6   	GPR[$a3]: 7   	GPR[$t0]: 8   	GPR[$t1]: 9   	GPR[$t2]: 10  	GPR[$t3]: 11  
+GPR[$t4]: 12  	GPR[$t5]: 13  	GPR[$t6]: 14  	GPR[$t7]: 15  	GPR[$s0]: 16  	GPR[$s1]: 17  
+GPR[$s2]: 18  	GPR[$s3]: 19  	GPR[$s4]: 20  	GPR[$s5]: 21  	GPR[$s6]: 22  	GPR[$s7]: 23  
+GPR[$t8]: 24  	GPR[$t9]: 25  	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 116 
+    1024: 0	...
+    4096: 0	...
+==> addr:  116 EXIT 

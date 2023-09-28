@@ -1,0 +1,36 @@
+Addr Instruction
+   0 NOTR 
+   4 STRA 
+   8 ADDI $0, $t0, 5
+  12 ADDI $t0, $t1, 2
+  16 ADD $t0, $t1, $t2
+  20 MUL $t0, $t2
+  24 MFLO $t3
+  28 SUB $t1, $t0, $t4
+  32 MUL $t3, $t4
+  36 MFLO $t5
+  40 DIV $t5, $t4
+  44 MFLO $t6
+  48 MFHI $s7
+  52 BEQ $0, $s7, 8	# offset is +32 bytes
+  56 ADDI $0, $a0, 78
+  60 JAL 25	# target is byte address 100
+  64 BLTZ $s7, 8	# offset is +32 bytes
+  68 ADDI $0, $a0, 76
+  72 JAL 25	# target is byte address 100
+  76 BGTZ $s7, 8	# offset is +32 bytes
+  80 ADDI $0, $a0, 72
+  84 JAL 25	# target is byte address 100
+  88 ADDI $0, $a0, 89
+  92 JAL 25	# target is byte address 100
+  96 EXIT 
+ 100 NOTR 
+ 104 PCH 
+ 108 ADDI $0, $a0, 10
+ 112 PCH 
+ 116 STRA 
+ 120 NOTR 
+ 124 ADDI $0, $a0, 78
+ 128 PCH 
+ 132 JR $ra
+     512: 78	     516: 76	     520: 72	     524: 10	     528: 0	...

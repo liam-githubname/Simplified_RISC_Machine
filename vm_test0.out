@@ -1,0 +1,30 @@
+      PC: 0
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 0   	GPR[$t1]: 0   	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:    0 STRA 
+      PC: 4
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 0   	GPR[$t1]: 0   	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:    4 ADDI $0, $t0, 1
+      PC: 8
+GPR[$0 ]: 0   	GPR[$at]: 0   	GPR[$v0]: 0   	GPR[$v1]: 0   	GPR[$a0]: 0   	GPR[$a1]: 0   
+GPR[$a2]: 0   	GPR[$a3]: 0   	GPR[$t0]: 1   	GPR[$t1]: 0   	GPR[$t2]: 0   	GPR[$t3]: 0   
+GPR[$t4]: 0   	GPR[$t5]: 0   	GPR[$t6]: 0   	GPR[$t7]: 0   	GPR[$s0]: 0   	GPR[$s1]: 0   
+GPR[$s2]: 0   	GPR[$s3]: 0   	GPR[$s4]: 0   	GPR[$s5]: 0   	GPR[$s6]: 0   	GPR[$s7]: 0   
+GPR[$t8]: 0   	GPR[$t9]: 0   	GPR[$k0]: 0   	GPR[$k1]: 0   	GPR[$gp]: 1024	GPR[$sp]: 4096
+GPR[$fp]: 4096	GPR[$ra]: 0   
+    1024: 0	...
+    4096: 0	...
+==> addr:    8 EXIT 

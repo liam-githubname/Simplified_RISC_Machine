@@ -1,0 +1,328 @@
+          HOMEWORK 1 OVERVIEW
+            Due: Oct. 2
+            
+Problem:
+
+2. (100 points) Implement the SRM
+   in C. Submit on webcourses a zip file with:
+
+   - all source files (.c, .h)
+   - output of the tests (.myo, .myp)
+   - updated Makefile to build your code
+   
+
+          THE TASK FOR HOMEWORK 1
+
+Write VM that:
+
+  - reads binary object files
+  - loads the program in the bof
+
+  - with -p option:
+     prints the loaded program and exits
+
+       ./vm -p vm_test0.bof
+
+  - with no options:
+      - executes the program
+      - produces tracing output
+
+       ./vm vm_test0.bof
+       
+
+         THE VM AS A UNIX PROGRAM
+
+One command line argument: BOF filename
+
+ - Mandatory argument is a bof file name
+     This file contains the program
+
+   Example:
+
+     ./vm vm_test2.bof
+
+
+ - Optional argument to list the program
+    -p
+
+   Example:
+
+    ./vm -p vm_test2.bof
+    
+
+I/O:
+ - Listing and tracing output to stdout
+
+ - Error messages to stderr
+
+
+    RUNNING PROGRAM'S INPUT AND OUTPUT
+
+Program reads from stdin
+
+  with the RCH instruction
+
+Program writes to stdout
+
+  with the PSTR and PCH instructions
+
+   
+
+         WHAT WE PROVIDE
+
+Files on Webcourses, hw1 directory,
+     download:
+      - srm-vm.pdf
+         - VM details
+         - output format
+
+      - hw1-tests.zip
+
+contents of hw1-tests.zip:
+
+  - Makefile
+  - source files for asm and disasm
+       *.c, *.h, asm.y, asm_lexer.l
+
+  - our tests
+      vm_test*.bof
+  - expected vm tracing results
+     vm_test*.out
+  - expected vm -p (listing) results
+     vm_test*.lst
+
+  - sources for the assembler (asm*, ...)
+  - sources for the disassembler (disasm*)
+  - (assembly code for the tests
+          vm_test*.asm)
+
+
+      TESTS AND EXPECTED TEST RESULTS
+
+Test inputs:
+
+    vm_test0.bof, vm_test1.bof,
+    vm_test2.bof, vm_test3.bof,
+    vm_test4.bof, vm_test5.bof,
+    vm_test6.bof, vm_test7.bof
+
+Expected tracing output results:
+
+    vm_test0.out, vm_test1.out,
+    vm_test2.out, vm_test3.out,
+    vm_test4.out, vm_test5.out,
+    vm_test6.out, vm_test7.out
+
+Expected listing output results:
+
+    vm_test0.lst, vm_test1.lst,
+    vm_test2.lst, vm_test3.lst,
+    vm_test4.lst, vm_test5.lst,
+    vm_test6.lst, vm_test7.lst
+
+Examples of running tests:
+
+   make vm_test0.myo
+
+   # or
+
+   ./vm vm_test0.bof >vm_test0.myo 2>&1
+
+   # compare to expected results
+   
+   diff -w -B vm_test0.out vm_test0.myo
+
+
+   make vm_test0.myp
+
+   # or
+
+   ./vm -p vm_tset0.bof >vm_tset0.myp 2>&1
+
+
+   # compare to expected results
+   
+   diff -w -B vm_test0.lst vm_test0.myp
+
+
+     FILE NAMES FOR YOUR TEST RESULTS
+
+Your tracing test (./vm) results:
+
+    vm_test0.myo, vm_test1.myo,
+    vm_test2.myo, vm_test3.myo,
+    vm_test4.myo, vm_test5.myo,
+    vm_test6.myo, vm_test7.myo
+
+Your listing test (./vm -p) results:
+
+    vm_test0.myp, vm_test1.myp,
+    vm_test2.myp, vm_test3.myp,
+    vm_test4.myp, vm_test5.myp,
+    vm_test6.myp, vm_test7.lst
+
+
+     PROVIDED MODULES (IN HW1-TESTS.ZIP)
+
+ machine_types (machine_types.h,
+                machine_types.c)
+  defines types: word_type, address_type
+  code that implements the ISA's:
+      sgnExt, zeroExt, formOffset, formAddress
+      machine_types_sgnExt,
+      machine_types_zeroExt,
+      machine_types_formOffset,
+      machine_types_formAddress
+
+
+ bof
+     types: BOFHeader, BOFFILE 
+     functions: bof_read_open,
+                bof_read_header
+		bof_read_word
+
+ instruction
+   enum types for: op_code, func_code,
+                   instr_type, syscall_type
+   types: reg_instr_t, syscall_instr_t,
+   	  immed_instr_t, jump_instr_t
+   unions: bin_instr_t
+   functions: instruction_read,
+              instruction_type,
+	      instruction_syscall_number,
+	      instruction_assembly_form
+
+  #include "instruction.h"
+  bin_instr_t bi;
+  if (instruction_type(bi) == reg_instr_type) {
+     reg_instr_t ri = bi.reg;
+     if (ri.func == MUL_F) {
+        // do multiplication...
+     } else if (ri.func == SYSCALL_F) {
+        if (instruction_syscall_number(bi)
+	    == EXIT) {
+	    exit(0);
+	} else { // ...
+	        }
+	
+
+
+
+          MORE PROVIDED FILES
+
+ regname
+    defines NUM_REGISTERS, GP, SP, FP, RA
+    function: regname_get
+
+ utilities
+    functions: bail_with_error
+               newline
+
+
+ file_location
+   type: file_location
+
+
+
+ Also sources for the assembler (asm* ...)
+  and disassembler (disasm* )
+
+       PROVIDED MAKEFILE
+
+You should change:
+
+VM_OBJECTS = machine_main.o machine.o \
+    machine_types.o instruction.o bof.o \
+    regname.o utilities.o 
+
+
+Don't change: the bottom half of Makefile
+   (the developer's section)!
+   
+
+            USING THE MAKEFILE
+
+Use the Unix command
+
+   make target
+
+to build target
+
+Key targets:
+
+ machine.o  - compiles machine.c
+
+ 
+ vm   - builds the virtual machine
+        (compiles all the .c files to make
+	 VM_OBJECTS and then links them)
+
+ vm_test1.myo - runs 
+    ./vm vm_test1.bof >vm_test1.myo 2>&1
+
+
+ vm_test1.myp - runs 
+    ./vm -p vm_test1.bof >vm_test1.myp 2>&1
+
+ check-vm-outputs - runs
+    the VM on all tests, compares outputs
+    and says if they all pass (or not)
+
+
+ check-lst-outputs - runs
+    the ./vm -p on all tests, compares outputs
+    and says if they all pass (or not)
+
+ 
+ check-outputs - runs
+    make check-lst-outputs check-vm-outputs
+
+ submission.zip - creates zip file for your
+    homework submission
+ 
+
+     OTHER POTENTIALLY USEFUL TARGETS
+
+ clean - removes *.o *.myo *.myp
+         removes vm vm.exe
+         removes submission.zip
+
+ asm - builds the assembler
+
+
+       HOW TO WRITE YOUR OWN TESTS
+
+Build the assembler:
+
+    make asm
+
+Write a test in a .asm file
+
+    emacs test_add.asm
+
+    # see srm-asm.pdf for the language
+    
+Make the .bof file
+
+    make test_add.bof
+
+    # or
+
+    ./asm test_add.asm
+
+Optional: Check the bof file
+
+    make test_add.myp
+
+    # or
+
+    ./vm -p test_add.bof
+
+Run your test in your VM
+
+    make test_add.myo
+
+    # or
+
+    ./vm test_add.bof > test_add.myo 2>&1
+

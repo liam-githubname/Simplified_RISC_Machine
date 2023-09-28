@@ -1,0 +1,107 @@
+Addr Instruction
+   0 ADDI $0, $at, 1
+   4 ADDI $0, $v0, 2
+   8 ADDI $0, $v1, 3
+  12 ADDI $0, $a0, 4
+  16 ADDI $0, $a1, 5
+  20 ADDI $0, $a2, 6
+  24 ADDI $0, $a3, 7
+  28 ADDI $0, $t0, 8
+  32 ADDI $0, $t1, 9
+  36 ADDI $0, $t2, 10
+  40 ADDI $0, $t3, 11
+  44 ADDI $0, $t4, 12
+  48 ADDI $0, $t5, 13
+  52 ADDI $0, $t6, 14
+  56 ADDI $0, $t7, 15
+  60 ADDI $0, $s0, 16
+  64 ADDI $0, $s1, 17
+  68 ADDI $0, $s2, 18
+  72 ADDI $0, $s3, 19
+  76 ADDI $0, $s4, 20
+  80 ADDI $0, $s5, 21
+  84 ADDI $0, $s6, 22
+  88 ADDI $0, $s7, 23
+  92 ADDI $0, $t8, 24
+  96 ADDI $0, $t9, 25
+ 100 JAL 71	# target is byte address 284
+ 104 JAL 30	# target is byte address 120
+ 108 JAL 52	# target is byte address 208
+ 112 JAL 88	# target is byte address 352
+ 116 EXIT 
+ 120 ADDI $sp, $sp, -4
+ 124 SW $sp, $at, 0	# offset is +0 bytes
+ 128 ADD $0, $sp, $at
+ 132 ADDI $sp, $sp, -64
+ 136 SW $at, $v0, -1	# offset is -4 bytes
+ 140 SW $at, $v1, -2	# offset is -8 bytes
+ 144 SW $at, $a0, -3	# offset is -12 bytes
+ 148 SW $at, $a1, -4	# offset is -16 bytes
+ 152 SW $at, $a2, -5	# offset is -20 bytes
+ 156 SW $at, $a3, -6	# offset is -24 bytes
+ 160 SW $at, $t0, -7	# offset is -28 bytes
+ 164 SW $at, $t1, -8	# offset is -32 bytes
+ 168 SW $at, $t2, -9	# offset is -36 bytes
+ 172 SW $at, $t3, -10	# offset is -40 bytes
+ 176 SW $at, $t4, -11	# offset is -44 bytes
+ 180 SW $at, $t5, -12	# offset is -48 bytes
+ 184 SW $at, $t6, -13	# offset is -52 bytes
+ 188 SW $at, $t7, -14	# offset is -56 bytes
+ 192 SW $at, $t8, -15	# offset is -60 bytes
+ 196 SW $at, $t9, -16	# offset is -64 bytes
+ 200 LW $at, $at, 0	# offset is +0 bytes
+ 204 JR $ra
+ 208 LW $sp, $t9, 0	# offset is +0 bytes
+ 212 LW $sp, $t8, 1	# offset is +4 bytes
+ 216 LW $sp, $t7, 2	# offset is +8 bytes
+ 220 LW $sp, $t6, 3	# offset is +12 bytes
+ 224 LW $sp, $t5, 4	# offset is +16 bytes
+ 228 LW $sp, $t4, 5	# offset is +20 bytes
+ 232 LW $sp, $t3, 6	# offset is +24 bytes
+ 236 LW $sp, $t2, 7	# offset is +28 bytes
+ 240 LW $sp, $t1, 8	# offset is +32 bytes
+ 244 LW $sp, $t0, 9	# offset is +36 bytes
+ 248 LW $sp, $a3, 10	# offset is +40 bytes
+ 252 LW $sp, $a2, 11	# offset is +44 bytes
+ 256 LW $sp, $a1, 12	# offset is +48 bytes
+ 260 LW $sp, $a0, 13	# offset is +52 bytes
+ 264 LW $sp, $v1, 14	# offset is +56 bytes
+ 268 LW $sp, $v0, 15	# offset is +60 bytes
+ 272 LW $sp, $at, 16	# offset is +64 bytes
+ 276 ADDI $sp, $sp, 68
+ 280 JR $ra
+ 284 ADDI $sp, $sp, -4
+ 288 SW $sp, $s0, 0	# offset is +0 bytes
+ 292 ADDI $sp, $sp, -4
+ 296 SW $sp, $s1, 0	# offset is +0 bytes
+ 300 ADDI $sp, $sp, -4
+ 304 SW $sp, $s2, 0	# offset is +0 bytes
+ 308 ADDI $sp, $sp, -4
+ 312 SW $sp, $s3, 0	# offset is +0 bytes
+ 316 ADDI $sp, $sp, -4
+ 320 SW $sp, $s4, 0	# offset is +0 bytes
+ 324 ADDI $sp, $sp, -4
+ 328 SW $sp, $s5, 0	# offset is +0 bytes
+ 332 ADDI $sp, $sp, -4
+ 336 SW $sp, $s6, 0	# offset is +0 bytes
+ 340 ADDI $sp, $sp, -4
+ 344 SW $sp, $s7, 0	# offset is +0 bytes
+ 348 JR $ra
+ 352 LW $sp, $s7, 0	# offset is +0 bytes
+ 356 ADDI $sp, $sp, 4
+ 360 LW $sp, $s6, 0	# offset is +0 bytes
+ 364 ADDI $sp, $sp, 4
+ 368 LW $sp, $s5, 0	# offset is +0 bytes
+ 372 ADDI $sp, $sp, 4
+ 376 LW $sp, $s4, 0	# offset is +0 bytes
+ 380 ADDI $sp, $sp, 4
+ 384 LW $sp, $s3, 0	# offset is +0 bytes
+ 388 ADDI $sp, $sp, 4
+ 392 LW $sp, $s2, 0	# offset is +0 bytes
+ 396 ADDI $sp, $sp, 4
+ 400 LW $sp, $s1, 0	# offset is +0 bytes
+ 404 ADDI $sp, $sp, 4
+ 408 LW $sp, $s0, 0	# offset is +0 bytes
+ 412 ADDI $sp, $sp, 4
+ 416 JR $ra
+    1024: 0	...

@@ -1,0 +1,17 @@
+Addr Instruction
+   0 ADDI $0, $t0, 1
+   4 SLL $t0, $t1, 20
+   8 ADD $t0, $t1, $t2
+  12 ADD $t0, $t0, $t3
+  16 DIV $t2, $t3
+  20 MFLO $t4
+  24 MFHI $t5
+  28 SW $gp, $t5, 0	# offset is +0 bytes
+  32 SW $gp, $t4, 1	# offset is +4 bytes
+  36 SLL $t0, $t6, 10
+  40 MUL $t6, $t2
+  44 MFHI $t7
+  48 ADDI $sp, $sp, -4
+  52 SW $sp, $t7, 0	# offset is +0 bytes
+  56 EXIT 
+    1024: 0	...

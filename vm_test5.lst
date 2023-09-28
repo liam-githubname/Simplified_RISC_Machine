@@ -1,0 +1,42 @@
+Addr Instruction
+   0 ADDI $0, $t0, 7
+   4 ADDI $0, $t1, 15
+   8 LW $gp, $t2, 0	# offset is +0 bytes
+  12 AND $t0, $t2, $t3
+  16 SLL $t3, $t4, 5
+  20 ADDI $0, $t5, 1
+  24 SLL $t5, $t5, 7
+  28 SRL $t5, $t5, 1
+  32 BNE $t3, $t5, 2	# offset is +8 bytes
+  36 LBU $gp, $a0, 1	# offset is +4 bytes
+  40 JAL 34	# target is byte address 136
+  44 XOR $t4, $t5, $t6
+  48 BGTZ $t6, 2	# offset is +8 bytes
+  52 LBU $gp, $a0, 1	# offset is +4 bytes
+  56 JAL 34	# target is byte address 136
+  60 BGTZ $t6, 2	# offset is +8 bytes
+  64 LBU $gp, $a0, 3	# offset is +12 bytes
+  68 JAL 34	# target is byte address 136
+  72 BLTZ $t6, 2	# offset is +8 bytes
+  76 LBU $gp, $a0, 2	# offset is +8 bytes
+  80 JAL 34	# target is byte address 136
+  84 BEQ $0, $t6, 2	# offset is +8 bytes
+  88 LW $gp, $a0, 5	# offset is +20 bytes
+  92 JAL 34	# target is byte address 136
+  96 BOR $t5, $t4, $t7
+ 100 ADDI $0, $t8, 65
+ 104 NOR $t5, $t3, $t8
+ 108 ADDI $0, $t9, -68
+ 112 XORI $t9, $v0, 0x20
+ 116 XORI $v0, $v1, 0xff9c
+ 120 BEQ $0, $v1, 2	# offset is +8 bytes
+ 124 LW $gp, $a0, 5	# offset is +20 bytes
+ 128 JAL 34	# target is byte address 136
+ 132 EXIT 
+ 136 NOTR 
+ 140 PCH 
+ 144 ADDI $0, $a0, 10
+ 148 PCH 
+ 152 JR $ra
+     512: 2	     516: 78	     520: 76	     524: 72	     528: 10	
+     532: 89	     536: 0	...

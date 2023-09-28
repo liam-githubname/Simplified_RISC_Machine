@@ -4,6 +4,7 @@
 
 #include "instruction.h"
 #include "machine_types.h"
+#include <arm/types.h>
 
 #define MEMORY_SIZE_IN_BYTES (65536 - BYTES_PER_WORD)
 #define MEMORY_SIZE_IN_WORDS (MEMORY_SIZE_IN_BYTES / BYTES_PER_WORD)
@@ -17,5 +18,8 @@ static union mem_u {
 
 } memory;
 
+
+// Register array that holds all 32 registers used by the vm
+word_type registers[32] = { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
 #endif
