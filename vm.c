@@ -1,6 +1,19 @@
+// The header files aren't defining the symbols had to repalce with src
+// files I know this is bad but I can't figure it out
+// #include "bof.c"
+// #include "utilities.c"
+// #include "instruction.c"
+// #include "regname.c"
+// #include "machine_types.c"
+// #include "parse_bof.c"
+// #include "instruction.h"
+// #include "machine_types.h"
+// #include "utilities.h"
+// #include "regname.h"
+// #include "machine_types.h"
+#include "instruction.h"
 #include "bof.h"
 #include "vm_mem.h"
-#include "instruction.h"
 #include "parse_bof.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -109,9 +122,64 @@ int main(int argc, char *argv[]) {
         case syscall_instr_type:
           break;
 
-        case immed_instr_type:
-          break;
 
+
+        
+        //header.text_start_address
+        case immed_instr_type:
+        switch (memory.instrs[i].immed.op) {
+          
+          case 9:
+            memory.instrs[i].immed.rt = memory.instrs[i].immed.rs + machine_types_sgnExt(memory.instrs[i].immed.immed);
+          break;
+          case 12:
+            memory.instrs[i].immed.rt = memory.instrs[i].immed.rs & machine_types_zeroExt(memory.instrs[i].immed.immed);
+          break;
+          case 13:
+            memory.instrs[i].immed.rt = memory.instrs[i].immed.rs | machine_types_zeroExt(memory.instrs[i].immed.immed);
+          break;
+          case 14:
+            memory.instrs[i].immed.rt = memory.instrs[i].immed.rs ^ machine_types_zeroExt(memory.instrs[i].immed.immed);
+          break;
+          case 4:
+            if(memory.instrs[i].immed.rs == memory.instrs[i].immed.rt)
+              header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
+          break;
+          case 1:
+            if(memory.instrs[i].immed.rs >= 0)
+              header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
+          break;
+          case 7:
+            if(memory.instrs[i].immed.rs > 0)
+              header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
+          break;
+          case 6:
+            if(memory.instrs[i].immed.rs <= 0)
+              header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
+          break;
+          case 8:
+            if(memory.instrs[i].immed.rs < 0)
+              header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
+          break;
+          case 5:
+            if(memory.instrs[i].immed.rs != memory.instrs[i].immed.rt)
+              header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
+          break;
+          case 36:
+            memory.instrs[i].immed.rt = machine_types_zeroExt(memory.bytes[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)]);
+          break;
+          case 35:
+            memory.instrs[i].immed.rt = memory.bytes[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)];
+          break;
+          case 40:
+            memory.bytes[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)] = memory.instrs[i].immed.rt;
+            break;
+          case 43:
+      memory.bytes[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)] = memory.instrs[i].immed.rt;
+            break;
+        }
+          break;
+          
         case jump_instr_type:
           break;
 
@@ -121,8 +189,6 @@ int main(int argc, char *argv[]) {
         default:
           break;
       }
-
-      print_cur_register(registers);
     }
   }
 }
