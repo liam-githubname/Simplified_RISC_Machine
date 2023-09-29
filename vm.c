@@ -98,6 +98,7 @@ int main(int argc, char *argv[]) {
               break;
             case 8:
               // Jump will add later
+              // fard
               break;
             case 12:
               // System call will add later;
