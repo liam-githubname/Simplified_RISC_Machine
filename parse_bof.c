@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include "instruction.h"
-#include "machine_types.h"
 #include "vm_mem.h"
 #include "parse_bof.h"
 #include "bof.h"

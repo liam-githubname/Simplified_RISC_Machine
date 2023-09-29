@@ -12,10 +12,10 @@ RM = rm -f
 SUBMISSIONZIPFILE = submission.zip
 ZIP = zip -9
 # Add the names of your own files with a .o suffix to link them into the VM
+#             machine_main.o machine.o \
 
 # TODO: parse_bof.o needs to be added back to the objects once undef symb error is fixed
-VM_OBJECTS = vm.o \
-#             machine_main.o machine.o \
+VM_OBJECTS = vm.o parse_bof.o vm_mem.o \
              machine_types.o instruction.o bof.o \
              regname.o utilities.o
 SOURCESLIST = `echo $(VM_OBJECTS) | sed -e 's/\\.o/.c/g'`

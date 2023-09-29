@@ -9,17 +9,16 @@
 #define MEMORY_SIZE_IN_WORDS (MEMORY_SIZE_IN_BYTES / BYTES_PER_WORD)
 
 
-static union mem_u {
+union mem_u {
 
   byte_type bytes[MEMORY_SIZE_IN_BYTES];
   word_type words[MEMORY_SIZE_IN_WORDS];
   bin_instr_t instrs[MEMORY_SIZE_IN_WORDS];
 
-} memory;
+};
 
-word_type HI, LO;
-
-// Register array that holds all 32 registers used by the vm
-word_type registers[32] = { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 };
+extern union mem_u memory;
+extern word_type registers[32];
+extern word_type HI, LO;
 
 #endif
