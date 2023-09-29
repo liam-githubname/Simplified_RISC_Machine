@@ -1,19 +1,6 @@
-// The header files aren't defining the symbols had to repalce with src
-// files I know this is bad but I can't figure it out
-// #include "bof.c"
-// #include "utilities.c"
-// #include "instruction.c"
-// #include "regname.c"
-// #include "machine_types.c"
-// #include "parse_bof.c"
-// #include "instruction.h"
-// #include "machine_types.h"
-// #include "utilities.h"
-// #include "regname.h"
-// #include "machine_types.h"
-#include "instruction.h"
 #include "bof.h"
 #include "vm_mem.h"
+#include "instruction.h"
 #include "parse_bof.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -133,6 +120,8 @@ int main(int argc, char *argv[]) {
         default:
           break;
       }
+
+      print_cur_register(registers);
     }
   }
 }

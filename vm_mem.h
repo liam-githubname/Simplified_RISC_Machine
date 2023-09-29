@@ -21,4 +21,6 @@ extern union mem_u memory;
 extern word_type registers[32];
 extern word_type HI, LO;
 
+extern void print_cur_register(word_type registers[32]);
+
 #endif
