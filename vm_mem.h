@@ -17,6 +17,7 @@ static union mem_u {
 
 } memory;
 
+word_type HI, LO;
 
 // Register array that holds all 32 registers used by the vm
 word_type registers[32] = { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 };

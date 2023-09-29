@@ -1,6 +1,8 @@
 // The header files aren't defining the symbols had to repalce with src
 // files I know this is bad but I can't figure it out
 #include "bof.c"
+#include "instruction.h"
+#include "machine_types.h"
 #include "utilities.c"
 #include "instruction.c"
 #include "regname.c"
@@ -71,7 +73,92 @@ int main(int argc, char *argv[]) {
     header = bof_read_header(bf);
     // load_program(argv[1]);
 
+    int i;
+    for(i = 0; i < header.text_length / BYTES_PER_WORD; i++) {
 
+      memory.instrs[i] = instruction_read(bf);
+
+    }
+
+    for(int j = 0; j < header.data_length / BYTES_PER_WORD; j++) {
+
+      memory.words[i + j] = bof_read_word(bf);
+
+    }
+
+    instr_type cur_instr_type;
+
+    for(i = 0; i < header.text_length / BYTES_PER_WORD; i++) {
+
+      cur_instr_type = instruction_type(memory.instrs[i]);
+
+      switch(cur_instr_type) {
+
+        case reg_instr_type:
+
+          switch (memory.instrs[i].reg.func) {
+
+            case 33:
+              registers[memory.instrs[i].reg.rd] = registers[memory.instrs[i].reg.rs] + registers[memory.instrs[i].reg.rt];
+              break;
+
+            case 35:
+              registers[memory.instrs[i].reg.rd] = registers[memory.instrs[i].reg.rs] - registers[memory.instrs[i].reg.rt];
+              break;
+            case 25:
+              //Multiplication will add later
+              break;
+            case 27:
+              //Divide will add later
+              break;
+            case 16:
+              registers[memory.instrs[i].reg.rd] = HI;
+              break;
+            case 18:
+              registers[memory.instrs[i].reg.rd] = LO;
+              break;
+            case 36:
+              registers[memory.instrs[i].reg.rd] = (registers[memory.instrs[i].reg.rs] & registers[memory.instrs[i].reg.rt]);
+            case 37:
+              registers[memory.instrs[i].reg.rd] = (registers[memory.instrs[i].reg.rs] | registers[memory.instrs[i].reg.rt]);
+              break;
+            case 39:
+              registers[memory.instrs[i].reg.rd] = !(registers[memory.instrs[i].reg.rs] | registers[memory.instrs[i].reg.rt]);
+              break;
+            case 38:
+              registers[memory.instrs[i].reg.rd] = (registers[memory.instrs[i].reg.rs] ^ registers[memory.instrs[i].reg.rt]);
+              break;
+            case 0:
+              registers[memory.instrs[i].reg.rd] = registers[memory.instrs[i].reg.rt] << memory.instrs[i].reg.shift;
+              break;
+            case 3:
+              registers[memory.instrs[i].reg.rd] = registers[memory.instrs[i].reg.rt] >> memory.instrs[i].reg.shift;
+              break;
+            case 8:
+              // Jump will add later
+              break;
+            case 12:
+              // System call will add later;
+              break;
+
+          }
+          break;
+
+        case syscall_instr_type:
+          break;
+
+        case immed_instr_type:
+          break;
+
+        case jump_instr_type:
+          break;
+
+        case error_instr_type:
+          break;
+
+        default:
+          break;
+      }
+    }
   }
-
 }
