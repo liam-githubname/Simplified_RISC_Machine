@@ -1,19 +1,58 @@
+// #include "bof.c"
+// #include "utilities.c"
+// #include "instruction.c"
+// #include "regname.c"
+// #include "machine_types.c"
+// #include "parse_bof.c"
+// #include "utilities.h"
+// #include "regname.h"
+// #include "machine_types.h"
+#include "instruction.h"
 #include "bof.h"
 #include "vm_mem.h"
 #include "parse_bof.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(int argc, char *argv[]) {
 
-  if (argc == 2) {
+  if (argc == 0 || argc > 3) return EXIT_FAILURE;
 
-    BOFFILE bf = bof_read_open(argv[1]);
+  BOFFILE bf;
+  BOFHeader header;
+  if (strcmp(argv[1], "-p") == 0) {
 
+    bf = bof_read_open(argv[2]);
+    header = bof_read_header(bf);
+    load_program(argv[2]);
+    instruction_print_table_heading(stdout);
+
+    int i = 0;
+
+    for (i = header.text_start_address; i < header.text_length / BYTES_PER_WORD; i++) {
+      printf("%d \t%s\n", header.text_start_address, instruction_assembly_form(memory.instrs[i]));
+      header.text_start_address += 4;
+    }
+
+    if (header.data_length > 0) {
+      for (int j = 0; j < header.data_length / BYTES_PER_WORD; j++) {
+          printf("%d:\t%d\t", header.data_start_address, memory.words[j + i]);
+          header.data_start_address += 4;
+      }
+  }
+
+  printf("%d: \t0", header.data_start_address);
+  printf("\t ...\n");
+
+  return EXIT_SUCCESS;
+  } else {
+
+    bf = bof_read_open(argv[1]);
+    header = bof_read_header(bf);
+    load_program(argv[1]);
 
 
   }
 
-
-  return EXIT_SUCCESS;
 }

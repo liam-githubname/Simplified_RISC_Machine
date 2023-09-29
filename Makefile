@@ -12,9 +12,10 @@ RM = rm -f
 SUBMISSIONZIPFILE = submission.zip
 ZIP = zip -9
 # Add the names of your own files with a .o suffix to link them into the VM
-VM_OBJECTS = machine_main.o machine.o \
+VM_OBJECTS = vm.o parse_bof.o
+#machine_main.o machine.o \
              machine_types.o instruction.o bof.o \
-             regname.o utilities.o 
+             regname.o utilities.o
 SOURCESLIST = `echo $(VM_OBJECTS) | sed -e 's/\\.o/.c/g'`
 TESTSOURCES = vm_test0.asm vm_test1.asm vm_test2.asm \
 		vm_test3.asm vm_test4.asm vm_test5.asm vm_test6.asm \
@@ -66,7 +67,7 @@ clean:
 
 # main target for testing
 .PHONY: check-outputs
-check-outputs: $(VM) $(ASM) $(TESTS) check-lst-outputs check-vm-outputs 
+check-outputs: $(VM) $(ASM) $(TESTS) check-lst-outputs check-vm-outputs
 	@echo 'Be sure to look for two test summaries above (listings and execution)'
 
 check-lst-outputs check-asm-outputs:
@@ -103,7 +104,7 @@ check-vm-outputs:
 
 # Automatically generate the submission zip file
 $(SUBMISSIONZIPFILE): *.c *.h $(STUDENTTESTOUTPUTS) $(STUDENTTESTLISTINGS) \
-		Makefile 
+		Makefile
 	$(ZIP) $@ $^ asm.y asm_lexer.l $(EXPECTEDOUTPUTS) $(EXPECTEDLISTINGS)
 
 # instructor's section below...
@@ -125,13 +126,13 @@ $(ASM)_lexer.o: $(ASM)_lexer.c ast.h $(ASM).tab.h utilities.h file_location.h
 $(ASM).tab.o: $(ASM).tab.c $(ASM).tab.h
 	$(CC) $(CFLAGS) -Wno-unused-const-variable -c $<
 
-$(ASM).tab.c $(ASM).tab.h: $(ASM).y ast.h parser_types.h machine_types.h 
+$(ASM).tab.c $(ASM).tab.h: $(ASM).y ast.h parser_types.h machine_types.h
 	$(YACC) $(YACCFLAGS) $(ASM).y
 
 lexer.o: lexer.c lexer.h $(ASM).tab.h
 	$(CC) $(CFLAGS) -c $<
 
-$(LEXER) : $(LEXER)_main.o $(LEXER).o $(ASM)_lexer.o ast.o $(ASM).tab.o file_location.o lexer.o utilities.o 
+$(LEXER) : $(LEXER)_main.o $(LEXER).o $(ASM)_lexer.o ast.o $(ASM).tab.o file_location.o lexer.o utilities.o
 	$(CC) $(CFLAGS) $^ -o $@
 
 $(ASM)_main.o: $(ASM)_main.c $(ASM).tab.h ast.h parser_types.h machine_types.h

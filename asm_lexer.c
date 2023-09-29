@@ -598,7 +598,7 @@ int yy_flex_debug = 0;
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
 #line 1 "asm_lexer.l"
-/* $Id: asm_lexer.l,v 1.26 2023/09/22 20:18:13 leavens Exp leavens $ */
+/* $Id: asm_lexer.l,v 1.26 2023/09/22 20:18:13 leavens Exp $ */
 /* Scanner for the SRM Assembly Language */
 #line 10 "asm_lexer.l"
 #include <stdio.h>

@@ -1,4 +1,4 @@
-/* $Id: bof.h,v 1.11 2023/09/16 16:23:10 leavens Exp $ */
+/* $Id: bof.h,v 1.12 2023/09/26 17:49:38 leavens Exp leavens $ */
 // Binary Object File Format (for the SRM)
 #ifndef _BOF_H
 #define _BOF_H
@@ -11,9 +11,9 @@
 typedef struct { // Field magic should be "BOF" (with the null char)
     char     magic[MAGIC_BUFFER_SIZE];
     word_type text_start_address;  // byte address to start running (PC)
-    word_type text_length;
+    word_type text_length;         // size of the text section in bytes
     word_type data_start_address;  // byte address of static data (GP)
-    word_type data_length;
+    word_type data_length;         // size of data section in bytes
     word_type stack_bottom_addr;   // byte address of stack "bottom" (FP)
 } BOFHeader;
 
