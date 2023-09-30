@@ -164,52 +164,52 @@ int main(int argc, char *argv[]) {
         switch (memory.instrs[i].immed.op) {
           
           case 9:  //ADDI
-            memory.instrs[i].immed.rt = memory.instrs[i].immed.rs + machine_types_sgnExt(memory.instrs[i].immed.immed);
+            registers[memory.instrs[i].immed.rt] = registers[memory.instrs[i].immed.rs] + registers[machine_types_sgnExt(memory.instrs[i].immed.immed)];
           break;
           case 12: //ANDI
-            memory.instrs[i].immed.rt = memory.instrs[i].immed.rs & machine_types_zeroExt(memory.instrs[i].immed.immed);
+            registers[memory.instrs[i].immed.rt] = registers[memory.instrs[i].immed.rs] & machine_types_zeroExt(registers[memory.instrs[i].immed.immed]);
           break;
           case 13://BORI 
-            memory.instrs[i].immed.rt = memory.instrs[i].immed.rs | machine_types_zeroExt(memory.instrs[i].immed.immed);
+            registers[memory.instrs[i].immed.rt] = registers[memory.instrs[i].immed.rs] | machine_types_zeroExt(registers[memory.instrs[i].immed.immed]);
           break;
           case 14://XORI
-            memory.instrs[i].immed.rt = memory.instrs[i].immed.rs ^ machine_types_zeroExt(memory.instrs[i].immed.immed);
+            registers[memory.instrs[i].immed.rt] = registers[memory.instrs[i].immed.rs] ^ machine_types_zeroExt(registers[memory.instrs[i].immed.immed]);
           break;
           case 4://BEQ
-            if(memory.instrs[i].immed.rs == memory.instrs[i].immed.rt)
+            if(registers[memory.instrs[i].immed.rs] == registers[memory.instrs[i].immed.rt])
               header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
           break;
           case 1://BGEZ
-            if(memory.instrs[i].immed.rs >= 0)
+            if(registers[memory.instrs[i].immed.rs] >= 0)
               header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
           break;
           case 7: //BGTZ
-            if(memory.instrs[i].immed.rs > 0)
+            if(registers[memory.instrs[i].immed.rs] > 0)
               header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
           break;
           case 6://BLEZ
-            if(memory.instrs[i].immed.rs <= 0)
+            if(registers[memory.instrs[i].immed.rs] <= 0)
               header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
           break;
           case 8:// BLTZ
-            if(memory.instrs[i].immed.rs < 0)
+            if(registers[memory.instrs[i].immed.rs] < 0)
               header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
           break;
           case 5: //BNE
-            if(memory.instrs[i].immed.rs != memory.instrs[i].immed.rt)
+            if(registers[memory.instrs[i].immed.rs] != registers[memory.instrs[i].immed.rt])
               header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
           break;
           case 36:  //LBU
-            memory.instrs[i].immed.rt = machine_types_zeroExt(memory.bytes[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)]);
+            registers[memory.instrs[i].immed.rt] = machine_types_zeroExt(memory.bytes[registers[memory.instrs[i].immed.rs] + machine_types_formOffset(memory.instrs[i].immed.immed]));
           break;
           case 35:  //LW
-            memory.instrs[i].immed.rt = memory.bytes[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)];
+            registers[memory.instrs[i].immed.rt] = memory.bytes[registers[memory.instrs[i].immed.rs] + machine_types_formOffset(memory.instrs[i].immed.immed)];
           break;
           case 40:  //SB
-            memory.bytes[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)] = memory.instrs[i].immed.rt;
+            memory.bytes[registers[memory.instrs[i].immed.rs] + machine_types_formOffset(memory.instrs[i].immed.immed)] = memory.instrs[i].immed.rt;
             break;
           case 43:  //SW
-      memory.bytes[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)] = memory.instrs[i].immed.rt;
+      memory.bytes[registers[memory.instrs[i].immed.rs] + machine_types_formOffset(memory.instrs[i].immed.immed)] = memory.instrs[i].immed.rt;
             break;
         }
           break;
