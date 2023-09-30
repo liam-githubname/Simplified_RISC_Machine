@@ -103,10 +103,10 @@ int main(int argc, char *argv[]) {
               break;
             case 8:
               // TODO: Jump need to test if this is working properly
-              //i = registers[memory.instrs[i].reg.rs]/4;
+              i = (registers[31]/4)-1;
               //printf("%d",i);
               //i -=1;
-              //header.text_start_address = i;
+              header.text_start_address = i*4;
               //header.text_start_address = registers[memory.instrs[i].reg.rs];
               break;
 
@@ -221,9 +221,9 @@ int main(int argc, char *argv[]) {
             case 2://JMP
               //Jump: PC ← formAddress(P C, a)
               //TODO: This will likely have the same problem as the JAL below
-              //i = (machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr)/4);
-              
-              header.text_start_address = machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr);
+              i = (machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr)/4)-1;
+              header.text_start_address=i*4;
+              //header.text_start_address = machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr);
               break;
 
             case 3://JAL
