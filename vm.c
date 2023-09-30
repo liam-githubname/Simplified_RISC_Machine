@@ -218,6 +218,13 @@ int main(int argc, char *argv[]) {
               memory.words[(header.text_length/4) + machine_types_formOffset(memory.instrs[i].immed.immed)/4] = registers[memory.instrs[i].immed.rt];
               break;
             case 43:  //SW
+
+              if(memory.instrs[i].immed.rs == 29) // this is for the $SP
+                // TODO IMPORTANT. WE have to figure out how to add it for test7
+                // due to it adding words to it
+                // still trying to figure it out
+              
+              if(memory.instrs[i].immed.rs == 28) // this is for the $gp
               memory.words[(header.text_length/4) + machine_types_formOffset(memory.instrs[i].immed.immed)/4] = registers[memory.instrs[i].immed.rt];
               break;
           }
