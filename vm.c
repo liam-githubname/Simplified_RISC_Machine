@@ -10,7 +10,7 @@
 int main(int argc, char *argv[]) {
 
   if (argc == 0 || argc > 3) return EXIT_FAILURE;
-
+  int flag=0;
   BOFFILE bf;
   BOFHeader header;
   if (strcmp(argv[1], "-p") == 0) {
@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) {
 
     for(i = 0; i < header.text_length / BYTES_PER_WORD; i++) {
 
-
+      if(flag==0)
       print_cur_register(registers, header, memory.instrs[i]);
 
       cur_instr_type = instruction_type(memory.instrs[i]);
@@ -125,7 +125,7 @@ int main(int argc, char *argv[]) {
                    //GPR[$v0]  is the index 2
                    //GPR[$a0] is index 4
                    //GPR[$v0] ← printf("%s",&memory[GPR[$a0]])
-                   // registers[2]=printf("%s",&registers[4]);
+                   registers[2]=printf("%s",&memory.bytes[registers[4]]);
               break;
 
             case 11://PCH
@@ -141,9 +141,11 @@ int main(int argc, char *argv[]) {
 
             case 256://STRA
                      //TODO start VM tracing; start tracing output
+              flag=0;
               break;
             case 257://NOTR
                      //TODO no VM tracing; stop the tracing output
+              flag=1;
               break;
 
           }
