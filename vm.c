@@ -25,18 +25,18 @@ int main(int argc, char *argv[]) {
     i = 0;
 
     for (i = header.text_start_address; i < header.text_length / BYTES_PER_WORD; i++) {
-      printf("%d \t%s\n", header.text_start_address, instruction_assembly_form(memory.instrs[i]));
+      printf("%d\t%s\n", header.text_start_address, instruction_assembly_form(memory.instrs[i]));
       header.text_start_address += 4;
     }
 
     if (header.data_length > 0) {
       for (int j = 0; j < header.data_length / BYTES_PER_WORD; j++) {
-        printf("%d:\t%d\t", header.data_start_address, memory.words[j + i]);
+        printf("\t%d: %d", header.data_start_address, memory.words[j + i]);
         header.data_start_address += 4;
       }
     }
 
-    printf("%d:  0", header.data_start_address);
+    printf("\t%d: 0", header.data_start_address);
     printf("  ...\n");
 
     return EXIT_SUCCESS;
