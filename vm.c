@@ -111,7 +111,6 @@ int main(int argc, char *argv[]) {
               break;
             case 8:
               // Jump will add later
-              // fard
               break;
             case 12:
               // System call will add later;
@@ -133,12 +132,12 @@ int main(int argc, char *argv[]) {
               //GPR[$v0]  is the index 2
               //GPR[$a0] is index 4 
               //GPR[$v0] ← printf("%s",&memory[GPR[$a0]])
-              registers[2]=printf("%s",&memory.bytes[4]);
+             // registers[2]=printf("%s",&registers[4]);
             break;
             
             case 11://PCH
               //GPR[$v0] ←fputc(GPR[$a0],stdout)
-              registers[2] = fputc(memory.bytes[4],stdout);
+              registers[2] = fputc(registers[4],stdout);
             break;
             
             case 12://RCH
@@ -219,6 +218,7 @@ int main(int argc, char *argv[]) {
           switch (memory.instrs[i].jump.op) {
             case 2:
               //Jump: PC ← formAddress(P C, a)
+              header.text_start_address = machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr);
             break;
             
             case 3:
