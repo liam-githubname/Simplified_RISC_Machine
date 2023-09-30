@@ -73,10 +73,10 @@ int main(int argc, char *argv[]) {
               registers[memory.instrs[i].reg.rd] = registers[memory.instrs[i].reg.rs] - registers[memory.instrs[i].reg.rt];
               break;
             case 25:
-              //Multiplication will add later
+              //TODO: Multiplication will add later
               break;
             case 27:
-              //Divide will add later
+              //TODO: Divide will add later
               break;
             case 16:
               registers[memory.instrs[i].reg.rd] = HI;
@@ -102,10 +102,10 @@ int main(int argc, char *argv[]) {
               registers[memory.instrs[i].reg.rd] = registers[memory.instrs[i].reg.rt] >> memory.instrs[i].reg.shift;
               break;
             case 8:
-              // Jump will add later
+              //TODO: Jump will add later
               break;
             case 12:
-              // System call will add later;
+              //TODO: System call will add later;
               break;
           }
           break;
