@@ -55,7 +55,7 @@ int main(int argc, char *argv[]) {
     for(i = 0; i < header.text_length / BYTES_PER_WORD; i++) {
 
       if(flag==0)
-      print_cur_register(registers, header, memory.instrs[i]);
+        print_cur_register(registers, header, memory.instrs[i]);
 
       cur_instr_type = instruction_type(memory.instrs[i]);
 
@@ -73,10 +73,10 @@ int main(int argc, char *argv[]) {
               registers[memory.instrs[i].reg.rd] = registers[memory.instrs[i].reg.rs] - registers[memory.instrs[i].reg.rt];
               break;
             case 25:
-              //Multiplication will add later
+              //TODO: Multiplication will add later
               break;
             case 27:
-              //Divide will add later
+              //TODO: Divide will add later
               break;
             case 16:
               registers[memory.instrs[i].reg.rd] = HI;
@@ -102,10 +102,11 @@ int main(int argc, char *argv[]) {
               registers[memory.instrs[i].reg.rd] = registers[memory.instrs[i].reg.rt] >> memory.instrs[i].reg.shift;
               break;
             case 8:
-              // Jump will add later
+              // TODO: Jump need to test if this is working properly
+              header.text_start_address = registers[memory.instrs[i].reg.rs];
               break;
             case 12:
-              // System call will add later;
+              // TODO: System call will add later;
               break;
           }
           break;
@@ -117,7 +118,6 @@ int main(int argc, char *argv[]) {
           switch (memory.instrs[i].syscall.code) {
 
             case 10:// EXIT
-              // print_cur_register(registers, header, memory.instrs[i]);
               exit(0);
               break;
 
@@ -140,11 +140,11 @@ int main(int argc, char *argv[]) {
               break;
 
             case 256://STRA
-                     //TODO start VM tracing; start tracing output
+                     //TODO: test if this is working, pretty sure that it is
               flag=0;
               break;
             case 257://NOTR
-                     //TODO no VM tracing; stop the tracing output
+                     //TODO: same comment as above obv
               flag=1;
               break;
 
@@ -215,20 +215,23 @@ int main(int argc, char *argv[]) {
           switch (memory.instrs[i].jump.op) {
             case 2:
               //Jump: PC ← formAddress(P C, a)
+              //TODO: This will likely have the same problem as the JAL below
               header.text_start_address = machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr);
               break;
 
             case 3:
               //Jump and Link: GPR[$ra] ← PC; PC ← formAddress(PC, a)
               //$ra technically index 31
-              registers[31]= header.text_start_address;
+              // TODO: This jump is for sure not working right, the next instruction read doesn't jump with the PC
+              registers[31]= header.text_start_address + 4;
               header.text_start_address = machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr);
+              header.text_start_address -= 4;
               break;
           }
           break;
 
         case error_instr_type:
-          // not sure what this should do
+          // TODO: not sure what this should do
           break;
 
         default:
