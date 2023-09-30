@@ -164,7 +164,7 @@ int main(int argc, char *argv[]) {
         switch (memory.instrs[i].immed.op) {
           
           case 9:  //ADDI
-            registers[memory.instrs[i].immed.rt] = registers[memory.instrs[i].immed.rs] + registers[machine_types_sgnExt(memory.instrs[i].immed.immed)];
+            registers[memory.instrs[i].immed.rt] = registers[memory.instrs[i].immed.rs] + machine_types_sgnExt(registers[memory.instrs[i].immed.immed]);
           break;
           case 12: //ANDI
             registers[memory.instrs[i].immed.rt] = registers[memory.instrs[i].immed.rs] & machine_types_zeroExt(registers[memory.instrs[i].immed.immed]);
@@ -200,7 +200,7 @@ int main(int argc, char *argv[]) {
               header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
           break;
           case 36:  //LBU
-            registers[memory.instrs[i].immed.rt] = machine_types_zeroExt(memory.bytes[registers[memory.instrs[i].immed.rs] + machine_types_formOffset(memory.instrs[i].immed.immed]));
+            registers[memory.instrs[i].immed.rt] = machine_types_zeroExt(memory.bytes[registers[memory.instrs[i].immed.rs] + machine_types_formOffset(memory.instrs[i].immed.immed)]);
           break;
           case 35:  //LW
             registers[memory.instrs[i].immed.rt] = memory.bytes[registers[memory.instrs[i].immed.rs] + machine_types_formOffset(memory.instrs[i].immed.immed)];
