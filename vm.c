@@ -102,18 +102,16 @@ int main(int argc, char *argv[]) {
               registers[memory.instrs[i].reg.rd] = registers[memory.instrs[i].reg.rt] >> memory.instrs[i].reg.shift;
               break;
             case 8:
-<<<<<<< HEAD
               // TODO: Jump need to test if this is working properly
-              header.text_start_address = registers[memory.instrs[i].reg.rs];
+              //i = registers[memory.instrs[i].reg.rs]/4;
+              //printf("%d",i);
+              //i -=1;
+              //header.text_start_address = i;
+              //header.text_start_address = registers[memory.instrs[i].reg.rs];
               break;
-            case 12:
-              // TODO: System call will add later;
-=======
-              //TODO: Jump will add later
-              break;
+
             case 12:
               //TODO: System call will add later;
->>>>>>> 07996c5e227a157643fce787bf1fa0c3435f51d9
               break;
           }
           break;
@@ -220,19 +218,26 @@ int main(int argc, char *argv[]) {
 
         case jump_instr_type:
           switch (memory.instrs[i].jump.op) {
-            case 2:
+            case 2://JMP
               //Jump: PC ← formAddress(P C, a)
               //TODO: This will likely have the same problem as the JAL below
+              //i = (machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr)/4);
+              
               header.text_start_address = machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr);
               break;
 
-            case 3:
+            case 3://JAL
               //Jump and Link: GPR[$ra] ← PC; PC ← formAddress(PC, a)
               //$ra technically index 31
               // TODO: This jump is for sure not working right, the next instruction read doesn't jump with the PC
-              registers[31]= header.text_start_address + 4;
-              header.text_start_address = machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr);
-              header.text_start_address -= 4;
+              
+              registers[31]= (header.text_start_address)+4;
+              i = (machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr)/4);
+              // = machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr);
+              i-=1;
+              header.text_start_address = i*4;
+              //header.text_start_address -= 4;
+              //printf("****** %d",i);
               break;
           }
           break;
