@@ -74,8 +74,8 @@ int main(int argc, char *argv[]) {
               break;
             case 25:
               // Multiplication will add later
-                HI= (registers[memory.instrs[i].reg.rs] * registers[memory.instrs[i].reg.rt])<< 31;
-                LO = (registers[memory.instrs[i].reg.rs] * registers[memory.instrs[i].reg.rt]);
+              HI= (registers[memory.instrs[i].reg.rs] * registers[memory.instrs[i].reg.rt])<< 31;
+              LO = (registers[memory.instrs[i].reg.rs] * registers[memory.instrs[i].reg.rt]);
               break;
             case 27:
               //Divide will add later
@@ -106,7 +106,6 @@ int main(int argc, char *argv[]) {
               registers[memory.instrs[i].reg.rd] = registers[memory.instrs[i].reg.rt] >> memory.instrs[i].reg.shift;
               break;
             case 8:
-              // Jump need to test if this is working properly
               i = (registers[31]/4)-1;
               header.text_start_address = i*4;
               break;
@@ -131,7 +130,7 @@ int main(int argc, char *argv[]) {
                    //GPR[$v0]  is the index 2
                    //GPR[$a0] is index 4
                    //GPR[$v0] ← printf("%s",&memory[GPR[$a0]])
-                   registers[2]=printf("%s",&memory.bytes[registers[4]]);
+              registers[2]=printf("%s",&memory.bytes[registers[4]]);
               break;
 
             case 11://PCH
@@ -146,11 +145,9 @@ int main(int argc, char *argv[]) {
               break;
 
             case 256://STRA
-                     //TODO: test if this is working, pretty sure that it is
               flag=0;
               break;
             case 257://NOTR
-                     //TODO: same comment as above obv
               flag=1;
               break;
 
@@ -220,25 +217,20 @@ int main(int argc, char *argv[]) {
         case jump_instr_type:
           switch (memory.instrs[i].jump.op) {
             case 2://JMP
-              //Jump: PC ← formAddress(P C, a)
-              //TODO: This will likely have the same problem as the JAL below
+                   //Jump: PC ← formAddress(P C, a)
+
               i = (machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr)/4)-1;
               header.text_start_address=i*4;
-              //header.text_start_address = machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr);
               break;
 
             case 3://JAL
-              //Jump and Link: GPR[$ra] ← PC; PC ← formAddress(PC, a)
-              //$ra technically index 31
-              // TODO: This jump is for sure not working right, the next instruction read doesn't jump with the PC
+                   //Jump and Link: GPR[$ra] ← PC; PC ← formAddress(PC, a)
+                   //$ra technically index 31
 
               registers[31]= (header.text_start_address)+4;
               i = (machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr)/4);
-              // = machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr);
               i-=1;
               header.text_start_address = i*4;
-              //header.text_start_address -= 4;
-              //printf("****** %d",i);
               break;
           }
           break;

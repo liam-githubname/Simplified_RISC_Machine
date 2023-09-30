@@ -20,8 +20,6 @@ void print_cur_register(word_type registers[32], BOFHeader header, bin_instr_t i
     printf("GPR[%s]: %d\t", regname_get(i), registers[i]);
   }
 
-  //TODO: fix the printing of the words that exist for the program
-
   word_type temp_mem_buf = registers[28];
 
   printf("\n");
@@ -32,9 +30,6 @@ void print_cur_register(word_type registers[32], BOFHeader header, bin_instr_t i
 
   printf("     %d: 0", temp_mem_buf);
   printf("\t ...");
-
-
-  // printf("\n%d: %d\t...", registers[28], memory.bytes[registers[28]/BYTES_PER_WORD]);
 
 
   printf("\n     %d: %d	...", registers[29], memory.bytes[registers[29]/BYTES_PER_WORD]);
