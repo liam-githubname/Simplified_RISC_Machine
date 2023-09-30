@@ -176,28 +176,35 @@ int main(int argc, char *argv[]) {
               registers[memory.instrs[i].immed.rt] = registers[memory.instrs[i].immed.rs] ^ machine_types_zeroExt(memory.instrs[i].immed.immed);
               break;
             case 4://BEQ
-              if(registers[memory.instrs[i].immed.rs] == registers[memory.instrs[i].immed.rt])
-                header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
+              if(registers[memory.instrs[i].immed.rs] == registers[memory.instrs[i].immed.rt]){
+                i = (header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed))/4;
+                header.text_start_address = i*4;}
               break;
             case 1://BGEZ
-              if(registers[memory.instrs[i].immed.rs] >= 0)
-                header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
+              if(registers[memory.instrs[i].immed.rs] >= 0){
+                i = (header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed))/4;
+                header.text_start_address = i*4;}
               break;
             case 7: //BGTZ
-              if(registers[memory.instrs[i].immed.rs] > 0)
-                header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
+              if(registers[memory.instrs[i].immed.rs] > 0){
+                i = (header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed))/4;
+                header.text_start_address = i*4;
+              }
               break;
             case 6://BLEZ
-              if(registers[memory.instrs[i].immed.rs] <= 0)
-                header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
+              if(registers[memory.instrs[i].immed.rs] <= 0){
+                i = (header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed))/4;
+                header.text_start_address = i*4;}
               break;
             case 8:// BLTZ
-              if(registers[memory.instrs[i].immed.rs] < 0)
-                header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
+              if(registers[memory.instrs[i].immed.rs] < 0){
+                i = (header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed))/4;
+                header.text_start_address = i*4;}
               break;
             case 5: //BNE
-              if(registers[memory.instrs[i].immed.rs] != registers[memory.instrs[i].immed.rt])
-                header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
+              if(registers[memory.instrs[i].immed.rs] != registers[memory.instrs[i].immed.rt]){
+                i = (header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed))/4;
+                header.text_start_address = i*4;}
               break;
             case 36:  //LBU
               registers[memory.instrs[i].immed.rt] = machine_types_zeroExt(memory.bytes[registers[memory.instrs[i].immed.rs] + machine_types_formOffset(memory.instrs[i].immed.immed)]);
