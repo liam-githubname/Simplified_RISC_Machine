@@ -119,7 +119,42 @@ int main(int argc, char *argv[]) {
           }
           break;
 
+
+
+        
         case syscall_instr_type:
+          switch (memory.instrs[i].syscall.code) {
+
+            case 10:// EXIT
+              exit(0);
+            break;
+            
+            case 4://PSTR
+              //GPR[$v0]  is the index 2
+              //GPR[$a0] is index 4 
+              //GPR[$v0] ← printf("%s",&memory[GPR[$a0]])
+              registers[2]=printf("%s",&memory.bytes[4]);
+            break;
+            
+            case 11://PCH
+              //GPR[$v0] ←fputc(GPR[$a0],stdout)
+              registers[2] = fputc(memory.bytes[4],stdout);
+            break;
+            
+            case 12://RCH
+              //GPR[$v0] ← getc(stdin)
+
+              registers[2] = getc(stdin);
+            break;
+            
+            case 256://STRA
+              //TODO start VM tracing; start tracing output
+            break;
+            case 257://NOTR
+              //TODO no VM tracing; stop the tracing output
+            break;
+            
+          }
           break;
 
 
@@ -129,61 +164,74 @@ int main(int argc, char *argv[]) {
         case immed_instr_type:
         switch (memory.instrs[i].immed.op) {
           
-          case 9:
+          case 9:  //ADDI
             memory.instrs[i].immed.rt = memory.instrs[i].immed.rs + machine_types_sgnExt(memory.instrs[i].immed.immed);
           break;
-          case 12:
+          case 12: //ANDI
             memory.instrs[i].immed.rt = memory.instrs[i].immed.rs & machine_types_zeroExt(memory.instrs[i].immed.immed);
           break;
-          case 13:
+          case 13://BORI 
             memory.instrs[i].immed.rt = memory.instrs[i].immed.rs | machine_types_zeroExt(memory.instrs[i].immed.immed);
           break;
-          case 14:
+          case 14://XORI
             memory.instrs[i].immed.rt = memory.instrs[i].immed.rs ^ machine_types_zeroExt(memory.instrs[i].immed.immed);
           break;
-          case 4:
+          case 4://BEQ
             if(memory.instrs[i].immed.rs == memory.instrs[i].immed.rt)
               header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
           break;
-          case 1:
+          case 1://BGEZ
             if(memory.instrs[i].immed.rs >= 0)
               header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
           break;
-          case 7:
+          case 7: //BGTZ
             if(memory.instrs[i].immed.rs > 0)
               header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
           break;
-          case 6:
+          case 6://BLEZ
             if(memory.instrs[i].immed.rs <= 0)
               header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
           break;
-          case 8:
+          case 8:// BLTZ
             if(memory.instrs[i].immed.rs < 0)
               header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
           break;
-          case 5:
+          case 5: //BNE
             if(memory.instrs[i].immed.rs != memory.instrs[i].immed.rt)
               header.text_start_address = header.text_start_address + machine_types_formOffset(memory.instrs[i].immed.immed);
           break;
-          case 36:
+          case 36:  //LBU
             memory.instrs[i].immed.rt = machine_types_zeroExt(memory.bytes[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)]);
           break;
-          case 35:
+          case 35:  //LW
             memory.instrs[i].immed.rt = memory.bytes[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)];
           break;
-          case 40:
+          case 40:  //SB
             memory.bytes[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)] = memory.instrs[i].immed.rt;
             break;
-          case 43:
+          case 43:  //SW
       memory.bytes[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)] = memory.instrs[i].immed.rt;
             break;
         }
           break;
           
         case jump_instr_type:
+          switch (memory.instrs[i].jump.op) {
+            case 2:
+              //Jump: PC ← formAddress(P C, a)
+            break;
+            
+            case 3:
+              //Jump and Link: GPR[$ra] ← PC; PC ← formAddress(PC, a)
+              //$ra technically index 31
+              registers[31]= header.text_start_address;
+              header.text_start_address = machine_types_formAddress(header.text_start_address, memory.instrs[i].jump.addr);
+            break;
+          }
           break;
 
         case error_instr_type:
+          // not sure what this should do
           break;
 
         default:
