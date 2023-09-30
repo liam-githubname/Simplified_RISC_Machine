@@ -2,6 +2,7 @@
 #define _VM_MEM_H
 
 
+#include "bof.h"
 #include "instruction.h"
 #include "machine_types.h"
 
@@ -21,6 +22,6 @@ extern union mem_u memory;
 extern word_type registers[32];
 extern word_type HI, LO;
 
-extern void print_cur_register(word_type registers[32]);
+extern void print_cur_register(word_type registers[32], BOFHeader header, bin_instr_t instruction);
 
 #endif

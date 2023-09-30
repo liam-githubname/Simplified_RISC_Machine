@@ -1,16 +1,3 @@
-// The header files aren't defining the symbols had to repalce with src
-// files I know this is bad but I can't figure it out
-// #include "bof.c"
-// #include "utilities.c"
-// #include "instruction.c"
-// #include "regname.c"
-// #include "machine_types.c"
-// #include "parse_bof.c"
-// #include "instruction.h"
-// #include "machine_types.h"
-// #include "utilities.h"
-// #include "regname.h"
-// #include "machine_types.h"
 #include "instruction.h"
 #include "bof.h"
 #include "vm_mem.h"
@@ -58,12 +45,17 @@ int main(int argc, char *argv[]) {
 
     bf = bof_read_open(argv[1]);
     header = bof_read_header(bf);
+    registers[29] = registers[30] = header.stack_bottom_addr;
+    registers[28] = header.data_start_address;
     load_program(argv[1]);
 
     int i;
     instr_type cur_instr_type;
 
     for(i = 0; i < header.text_length / BYTES_PER_WORD; i++) {
+
+
+      print_cur_register(registers, header, memory.instrs[i]);
 
       cur_instr_type = instruction_type(memory.instrs[i]);
 
@@ -125,6 +117,7 @@ int main(int argc, char *argv[]) {
           switch (memory.instrs[i].syscall.code) {
 
             case 10:// EXIT
+              // print_cur_register(registers, header, memory.instrs[i]);
               exit(0);
               break;
 
@@ -240,7 +233,7 @@ int main(int argc, char *argv[]) {
           break;
       }
 
-      print_cur_register(registers);
+      header.text_start_address += 4;
 
     }
   }
