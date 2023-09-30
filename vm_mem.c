@@ -27,6 +27,7 @@ void print_cur_register(word_type registers[32], BOFHeader header, bin_instr_t i
 
   printf("\n");
   for(int i = 0 ; i <header.data_length / BYTES_PER_WORD; i++) {
+    if (i % 5 == 0) printf("\n");
     printf("    %d: %d ", temp_mem_buf, memory.words[header.text_length /BYTES_PER_WORD+i]);
     temp_mem_buf += 4;
   }

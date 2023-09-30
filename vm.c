@@ -1,5 +1,6 @@
 #include "instruction.h"
 #include "bof.h"
+#include "machine_types.h"
 #include "vm_mem.h"
 #include "parse_bof.h"
 #include <stdlib.h>
@@ -90,6 +91,7 @@ int main(int argc, char *argv[]) {
               break;
             case 36:
               registers[memory.instrs[i].reg.rd] = (registers[memory.instrs[i].reg.rs] & registers[memory.instrs[i].reg.rt]);
+              break;
             case 37:
               registers[memory.instrs[i].reg.rd] = (registers[memory.instrs[i].reg.rs] | registers[memory.instrs[i].reg.rt]);
               break;
@@ -210,7 +212,7 @@ int main(int argc, char *argv[]) {
               registers[memory.instrs[i].immed.rt] = machine_types_zeroExt(memory.bytes[registers[memory.instrs[i].immed.rs] + machine_types_formOffset(memory.instrs[i].immed.immed)]);
               break;
             case 35:  //LW
-              registers[memory.instrs[i].immed.rt] = memory.bytes[registers[memory.instrs[i].immed.rs] + machine_types_formOffset(memory.instrs[i].immed.immed)];
+              registers[memory.instrs[i].immed.rt] = memory.words[(header.text_length)/4 + machine_types_formOffset(memory.instrs[i].immed.immed)];
               break;
             case 40:  //SB
               memory.bytes[registers[memory.instrs[i].immed.rs] + machine_types_formOffset(memory.instrs[i].immed.immed)] = memory.instrs[i].immed.rt;
