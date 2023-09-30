@@ -36,8 +36,8 @@ int main(int argc, char *argv[]) {
       }
     }
 
-    printf("%d: \t0", header.data_start_address);
-    printf("\t ...\n");
+    printf("%d:  0", header.data_start_address);
+    printf("  ...\n");
 
     return EXIT_SUCCESS;
 
@@ -73,10 +73,14 @@ int main(int argc, char *argv[]) {
               registers[memory.instrs[i].reg.rd] = registers[memory.instrs[i].reg.rs] - registers[memory.instrs[i].reg.rt];
               break;
             case 25:
-              //TODO: Multiplication will add later
+              // Multiplication will add later        
+                HI= (registers[memory.instrs[i].reg.rs] * registers[memory.instrs[i].reg.rt])<< 31;
+                LO = (registers[memory.instrs[i].reg.rs] * registers[memory.instrs[i].reg.rt]);
               break;
             case 27:
-              //TODO: Divide will add later
+              //Divide will add later
+              HI = registers[memory.instrs[i].reg.rs] % registers[memory.instrs[i].reg.rt];
+              LO = registers[memory.instrs[i].reg.rs] / registers[memory.instrs[i].reg.rt];
               break;
             case 16:
               registers[memory.instrs[i].reg.rd] = HI;
@@ -102,12 +106,9 @@ int main(int argc, char *argv[]) {
               registers[memory.instrs[i].reg.rd] = registers[memory.instrs[i].reg.rt] >> memory.instrs[i].reg.shift;
               break;
             case 8:
-              // TODO: Jump need to test if this is working properly
+              // Jump need to test if this is working properly
               i = (registers[31]/4)-1;
-              //printf("%d",i);
-              //i -=1;
               header.text_start_address = i*4;
-              //header.text_start_address = registers[memory.instrs[i].reg.rs];
               break;
 
             case 12:
