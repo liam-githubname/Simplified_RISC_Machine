@@ -165,9 +165,19 @@ int main(int argc, char *argv[]) {
 
             case 9:  //ADDI
 
-              registers[memory.instrs[i].immed.rt] = registers[memory.instrs[i].immed.rs] + machine_types_sgnExt(memory.instrs[i].immed.immed);
+              if (memory.instrs[i].immed.rt == 29) {
+
+                header.stack_bottom_addr += machine_types_sgnExt(memory.instrs[i].immed.immed);
+                registers[29] += machine_types_sgnExt(memory.instrs[i].immed.immed);
+
+              } else {
+
+                registers[memory.instrs[i].immed.rt] = registers[memory.instrs[i].immed.rs] + machine_types_sgnExt(memory.instrs[i].immed.immed);
+
+              }
 
               break;
+
             case 12: //ANDI
               registers[memory.instrs[i].immed.rt] = registers[memory.instrs[i].immed.rs] & machine_types_zeroExt(memory.instrs[i].immed.immed);
               break;
@@ -219,17 +229,26 @@ int main(int argc, char *argv[]) {
               break;
             case 43:  //SW
 
-              if(memory.instrs[i].immed.rs == 29){// this is for the $SP
-                // TODO IMPORTANT. WE have to figure out how to add it for test7
-                // due to it adding words to it
-                // still trying to figure it out
+              if (memory.instrs[i].immed.rs == 29) {
 
-                memory.words[(registers[29] + machine_types_formOffset(memory.instrs[i].immed.immed))/4] = registers[memory.instrs[i].immed.rt]; 
+                registers[29] += machine_types_formOffset(memory.instrs[i].immed.immed);
+
+                memory.words[registers[29]] = registers[memory.instrs[i].immed.rt];
+
+              } else if (memory.instrs[i].immed.rs == 28) {
+
+                memory.words[(header.text_length/4) + machine_types_formOffset(memory.instrs[i].immed.immed)/4] = registers[memory.instrs[i].immed.rt];
+
+              } else {
+
+                memory.words[registers[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)]] = registers[memory.instrs[i].immed.rt];
+
               }
-              if(memory.instrs[i].immed.rs == 28) // this is for the $gp
-              memory.words[(header.text_length/4) + machine_types_formOffset(memory.instrs[i].immed.immed)/4] = registers[memory.instrs[i].immed.rt];
+
               break;
           }
+
+
           break;
 
         case jump_instr_type:

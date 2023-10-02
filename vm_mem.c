@@ -21,22 +21,42 @@ void print_cur_register(word_type registers[32], BOFHeader header, bin_instr_t i
   for(int i = 0; i < 32; i++) {
     if (i % 6 == 0) printf("\n");
     printf("GPR[%-3s]: %-4d\t", regname_get(i), registers[i]);
+
+    // if (i == 31) printf("\n");
   }
 
   word_type temp_mem_buf = registers[28];
 
-  printf("\n");
-  for(int i = 0 ; i <header.data_length / BYTES_PER_WORD; i++) {
+  for(int i = 0 ; i <= header.data_length / BYTES_PER_WORD; i++) {
     if (i % 5 == 0) printf("\n");
-    printf("    %d: %d ", temp_mem_buf, memory.words[header.text_length /BYTES_PER_WORD+i]);
-    temp_mem_buf += 4;
+
+    if (memory.words[header.text_length / BYTES_PER_WORD + i] != 0) {
+
+      printf("    %4d: %d ", temp_mem_buf, memory.words[header.text_length /BYTES_PER_WORD+i]);
+      temp_mem_buf += 4;
+
+    }
+
   }
 
   printf("     %d: 0", temp_mem_buf);
   printf("\t...");
 
+  temp_mem_buf = registers[29];
 
-  printf("\n    %d: %d	...", registers[29], memory.bytes[registers[29]/BYTES_PER_WORD]);
+  for(int i = 0 ; i < ((header.stack_bottom_addr - registers[29]) / BYTES_PER_WORD) + 1 ; i++) {
+
+    if (i % 5 == 0) printf("\n");
+
+      printf("    %4d: %d ", temp_mem_buf, memory.words[temp_mem_buf]);
+      temp_mem_buf += 4;
+
+  }
+
+  // printf("     %d: 0", temp_mem_buf);
+  printf("\t...");
+
+
   printf("\n==> addr:%5d %-18s\n", header.text_start_address, instruction_assembly_form(instruction));
 
 
