@@ -213,6 +213,9 @@ int main(int argc, char *argv[]) {
             case 35:  //LW
               if (memory.instrs[i].immed.rs == 29) {
                 registers[memory.instrs[i].immed.rt] = memory.words[registers[29] + machine_types_formOffset(memory.instrs[i].immed.immed)];
+              } else if (memory.instrs[i].immed.rs == 1) {
+
+                registers[memory.instrs[i].immed.rs] = memory.words[registers[memory.instrs[i].immed.rs]];
               } else {
               registers[memory.instrs[i].immed.rt] = memory.words[(header.text_length/4) + machine_types_formOffset(memory.instrs[i].immed.immed)/4];
               }
@@ -232,12 +235,11 @@ int main(int argc, char *argv[]) {
 
                 memory.words[(header.text_length/4) + machine_types_formOffset(memory.instrs[i].immed.immed)/4] = registers[memory.instrs[i].immed.rt];
 
+              } else if (memory.instrs[i].immed.rs == 1) {
+
+                memory.words[registers[1] + machine_types_formOffset(memory.instrs[i].immed.immed)] = registers[memory.instrs[i].immed.rt];
+
               }
-              // else {
-              //
-              //   memory.words[registers[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)]] = registers[memory.instrs[i].immed.rt];
-              //
-              // }
 
               break;
           }

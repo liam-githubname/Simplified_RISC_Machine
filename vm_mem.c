@@ -22,7 +22,6 @@ void print_cur_register(word_type registers[32], BOFHeader header, bin_instr_t i
     if (i % 6 == 0) printf("\n");
     printf("GPR[%-3s]: %-4d\t", regname_get(i), registers[i]);
 
-    // if (i == 31) printf("\n");
   }
 
   word_type temp_mem_buf = registers[28];
