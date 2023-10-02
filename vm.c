@@ -164,18 +164,7 @@ int main(int argc, char *argv[]) {
           switch (memory.instrs[i].immed.op) {
 
             case 9:  //ADDI
-
-              if (memory.instrs[i].immed.rt == 29) {
-
-                header.stack_bottom_addr += machine_types_sgnExt(memory.instrs[i].immed.immed);
-                registers[29] += machine_types_sgnExt(memory.instrs[i].immed.immed);
-
-              } else {
-
                 registers[memory.instrs[i].immed.rt] = registers[memory.instrs[i].immed.rs] + machine_types_sgnExt(memory.instrs[i].immed.immed);
-
-              }
-
               break;
 
             case 12: //ANDI
@@ -222,7 +211,11 @@ int main(int argc, char *argv[]) {
               registers[memory.instrs[i].immed.rt] = machine_types_zeroExt(memory.words[(header.text_length)/4 + machine_types_formOffset(memory.instrs[i].immed.immed)/4]);
               break;
             case 35:  //LW
+              if (memory.instrs[i].immed.rs == 29) {
+                registers[memory.instrs[i].immed.rt] = memory.words[registers[29] + machine_types_formOffset(memory.instrs[i].immed.immed)];
+              } else {
               registers[memory.instrs[i].immed.rt] = memory.words[(header.text_length/4) + machine_types_formOffset(memory.instrs[i].immed.immed)/4];
+              }
               break;
             case 40:  //SB
               memory.words[(header.text_length/4) + machine_types_formOffset(memory.instrs[i].immed.immed)/4] = registers[memory.instrs[i].immed.rt];
@@ -239,11 +232,12 @@ int main(int argc, char *argv[]) {
 
                 memory.words[(header.text_length/4) + machine_types_formOffset(memory.instrs[i].immed.immed)/4] = registers[memory.instrs[i].immed.rt];
 
-              } else {
-
-                memory.words[registers[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)]] = registers[memory.instrs[i].immed.rt];
-
               }
+              // else {
+              //
+              //   memory.words[registers[memory.instrs[i].immed.rs + machine_types_formOffset(memory.instrs[i].immed.immed)]] = registers[memory.instrs[i].immed.rt];
+              //
+              // }
 
               break;
           }

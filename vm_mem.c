@@ -44,17 +44,30 @@ void print_cur_register(word_type registers[32], BOFHeader header, bin_instr_t i
 
   temp_mem_buf = registers[29];
 
+  int printed_first = 0;
+  int num_prints = 0;
+
   for(int i = 0 ; i < ((header.stack_bottom_addr - registers[29]) / BYTES_PER_WORD) + 1 ; i++) {
 
-    if (i % 5 == 0) printf("\n");
+    if (num_prints % 5 == 0) printf("\n");
 
+    if (memory.words[temp_mem_buf] == 0 && printed_first == 0) {
+      printf("    %4d: %d\t...", temp_mem_buf, memory.words[temp_mem_buf]);
+      printed_first = 1;
+      num_prints++;
+    }
+
+    if (memory.words[temp_mem_buf] != 0) {
       printf("    %4d: %d ", temp_mem_buf, memory.words[temp_mem_buf]);
-      temp_mem_buf += 4;
+      printed_first = 0;
+      num_prints++;
+    }
 
+    temp_mem_buf += 4;
   }
 
   // printf("     %d: 0", temp_mem_buf);
-  printf("\t...");
+  // printf("\t...");
 
 
   printf("\n==> addr:%5d %-18s\n", header.text_start_address, instruction_assembly_form(instruction));
