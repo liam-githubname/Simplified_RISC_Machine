@@ -20,24 +20,38 @@ int main(int argc, char *argv[]) {
     header = bof_read_header(bf);
 
     load_program(argv[2]);
-    instruction_print_table_heading(stdout);
 
     int i;
     i = 0;
 
+    printf("Addr Instruction\n");
     for (i = header.text_start_address; i < header.text_length / BYTES_PER_WORD; i++) {
       printf("%d\t%s\n", header.text_start_address, instruction_assembly_form(memory.instrs[i]));
       header.text_start_address += 4;
     }
 
-    if (header.data_length > 0) {
-      for (int j = 0; j < header.data_length / BYTES_PER_WORD; j++) {
+    int num_prints = 0;
+    int printed_first = 0;
+
+    for (int j = 0; j <= header.data_length / BYTES_PER_WORD; j++) {
+
+      if (num_prints % 5 == 0) printf("\n");
+
+      if (memory.words[i] == 0 && printed_first == 0) {
         printf("\t%d: %d", header.data_start_address, memory.words[j + i]);
-        header.data_start_address += 4;
+        num_prints++;
+        printed_first = 1;
+
       }
+      if (memory.words[i] != 0) {
+        printf("\t%d: %d", header.data_start_address, memory.words[j + i]);
+        num_prints++;
+        printed_first = 0;
+      }
+
+      header.data_start_address += 4;
     }
 
-    printf("\t%d: 0", header.data_start_address);
     printf("  ...\n");
 
     return EXIT_SUCCESS;
